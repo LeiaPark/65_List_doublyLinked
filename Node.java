@@ -20,6 +20,7 @@ public class Node {
     public Node( Object cargo, Node nextNode, Node prevNode) {
         this( cargo);
         this.nextNode = nextNode;
+        this.prevNode = prevNode;
     }
 
     /**
@@ -50,7 +51,7 @@ public class Node {
         return saveForReturn;
     }
     
-    public Node getPrevnode() {
+    public Node getPrevNode() {
     	return prevNode;
     }
     
